@@ -1,0 +1,13 @@
+#counter for cycle
+c=0
+# Possible spots
+_panels =[panels sorted by 75-percentile with geometry, height and roofID]
+# Output
+top_panels=[]
+# Batch for panels belonging to the same group
+batch=[]
+# Start the first batch with the best panel
+batch.append(_panels[c])
+series=1
+# index for the groups
+group=0
