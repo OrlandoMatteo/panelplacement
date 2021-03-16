@@ -67,12 +67,13 @@ def sortedZonalStats(all_panels,threshold):
     startTime=time.time()
     print("Starting zonal stats")
     for i,p in enumerate(all_panels):
-        s=zonal_stats(p,"data/percentile.tiff",stats=['min'])[0]
+        s=zonal_stats(p,"data/percentile75.tif",stats=['min'])[0]
         s["index"]=i
         s['h']=p.h
         s['uid']=p.uid
-        if s["min"]>threshold:
-            panel_stats.append(s)
+        if s["min"] is not None:
+            if s["min"]>threshold:
+                panel_stats.append(s)
         print(f"{i*100/len(all_panels):.2f}",end='\r')
     print(f"Finished zonal stats  {time.time()-startTime:.2f}")
     startTime=time.time()
