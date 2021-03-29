@@ -37,12 +37,12 @@ def evaluateTracesv2(filename):
 
 if __name__=="__main__":
     #gh_t=[i for i in range(400,600,50)]
-    gh_t=[100]
+    gh_t=[500]
     #createPercentileTiff()
-    #greedyAlgorithm(gh_t)
-    #classicAlgorithm(gh_t)
+    greedyAlgorithm(gh_t)
+    classicAlgorithm(gh_t)
     #evaluateTracesv2("classic_500")
     #evaluateTracesv2("output_500")
-    evaluateTraces("classic_100")
-    evaluateTraces("greedy_100")
+    #evaluateTraces("classic_400")
+    #evaluateTraces("greedy_400")
 
