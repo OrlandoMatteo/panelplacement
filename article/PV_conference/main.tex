@@ -1,0 +1,70 @@
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+% The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithm2e}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{multirow}
+\usepackage{subfigure}
+\usepackage{comment}
+\usepackage{url}
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+\newcommand{\virgolette}[1]{``#1''}    
+\newcommand{\attenzione}[1]{\textcolor{magenta}{#1}}
+\newcommand{\omitted}[1]{\emph{omitted for blind review}}
+
+
+\begin{document}
+
+%costo, tracceconsole log
+%an algorithm for PV optimal placement and configuration
+%Configuration and optimal placement of PV systems
+%OCCP: Optimal Configuration and Placement of PV systems in rooftops
+
+%\title{District panel deployment with cost analysis}
+\title{Design of District-level Photovoltaic Installations for Optimal Power Production and Economic Benefit}
+
+
+\author{
+% \IEEEauthorblockA{Omitted for double blind review}
+ \IEEEauthorblockN{Matteo Orlando, Lorenzo Bottaccioli, Sara Vinco, Enrico Macii, Massimo Poncino and Edoardo Patti}
+ \IEEEauthorblockA{Politecnico di Torino, Turin, Italy. Email: name.surname@polito.it}
+ }
+
+\maketitle
+
+\begin{abstract}
+\input{sections/abstract.tex}
+\end{abstract}
+
+\begin{IEEEkeywords}
+	 Photovoltaic installation, Reneawable Energy Simulation, PV design, PV optimization, GIS-based design, Zero-Energy District.
+\end{IEEEkeywords}
+
+
+\section{Introduction}\label{sec:intro}
+\input{sections/intro.tex}
+
+\section{State of the art}\label{sec:soa}
+\input{sections/soa.tex}
+
+\section{Photovoltaic power generation}\label{sec:back_pv}
+\input{sections/pv_background}
+
+\section{Methodology}\label{sec:method}
+\input{sections/method.tex}
+
+\section{Results}\label{sec:results}
+\input{sections/results.tex}
+
+\section{Conclusions}\label{sec:concl}
+\input{sections/conc.tex}
+
+\bibliographystyle{IEEEtran}
+\bibliography{Biblio}
+
+\end{document}
